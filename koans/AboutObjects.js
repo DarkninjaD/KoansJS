@@ -84,7 +84,7 @@ describe("About Objects", function () {
     expect("secretary" in megalomaniac).toBe(true);
 
     delete megalomaniac.henchman;
-    expect("henchman" in megalomaniac).toBe(true);
+    expect("henchman" in megalomaniac).toBe(false);
   });
 
   it("should use prototype to add to all objects", function () {
